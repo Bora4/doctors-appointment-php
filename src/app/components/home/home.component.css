@@ -1,0 +1,11 @@
+h1{
+    text-align: center;
+    color: white;
+    background-color: #eb5252;
+}
+
+.btn {
+    background-color:#eb5252;
+    outline:#eb5252;
+    color: white;
+}

@@ -1,0 +1,22 @@
+<h1>asd</h1>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Telefon Numarasi</th>
+            <th>Ad</th>
+            <th>Soyad</th>
+            <th>Uzmanlik</th>
+            <th>Hastane</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let doc of doclist">
+            <td> {{doc.phonenumber}} </td>
+            <td> {{doc.name}} </td>
+            <td> {{doc.surname}} </td>
+            <td> {{doc.specialty}} </td>
+            <td> {{doc.hospital}} </td>
+          </tr>
+    </tbody>
+</table>

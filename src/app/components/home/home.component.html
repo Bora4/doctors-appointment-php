@@ -1,0 +1,39 @@
+<h1>Doctor's Appointment</h1>
+
+<div class="d-flex justify-content-center">
+<ng-template #content let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">Randevu Al</h4>
+      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <form>
+        <div class="form-group">
+                <label for="Sehir">Sehir Secin</label>
+                <select class="custom-select">
+                    <option selected>Sehir</option>
+                    <option value="izmir">Izmir</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                <label for="Sikayet">Uzmanligi Secin</label>
+                <select class="custom-select" [formControl]="specialty">
+                    <option selected>Uzmanlik...</option>
+                    <option value="asd">asd</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+        </div>
+        
+      
+        <div class="modal-footer" ng-controller="myCtrl">   
+          <button routerLink="results" type="submit" class="btn btn-outline-dark" (click)="getformvalue()">Randevu Al</button>
+        </div>
+      </form>
+    </div>
+    
+  </ng-template><button class="btn btn-primary btn-outline-dark btn-lg" (click)="open(content)">Randevu Al</button>
+  <hr>
+</div>

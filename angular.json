@@ -27,6 +27,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -69,6 +70,7 @@
           "configurations": {
             "production": {
               "browserTarget": "doctors-appointment:build:production"
+              
             },
             "development": {
               "browserTarget": "doctors-appointment:build:development"
